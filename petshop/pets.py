@@ -29,7 +29,7 @@ def search(field, value):
     
     pets = cursor.fetchall()     
         
-    return render_template('index.html', pets = pets, order="desc" if order=="asc" else "asc"
+    return render_template('index.html', pets = pets, order="desc" if order=="asc" else "asc")
 
 @bp.route("/")
 def dashboard():
